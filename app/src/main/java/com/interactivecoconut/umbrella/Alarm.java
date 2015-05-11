@@ -24,8 +24,8 @@ public class Alarm {
         //RTC alarm repeating
         Calendar calendar = Calendar.getInstance();
         calendar.setTimeInMillis(System.currentTimeMillis());
-        calendar.set(Calendar.HOUR_OF_DAY, 7);
-        calendar.set(Calendar.MINUTE, 30);
+        calendar.set(Calendar.HOUR_OF_DAY, 21);
+        calendar.set(Calendar.MINUTE, 49);
         long milliseconds = calendar.getTimeInMillis();
 
         alarmMgr.setInexactRepeating(AlarmManager.RTC, milliseconds,
